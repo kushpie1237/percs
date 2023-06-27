@@ -1,8 +1,5 @@
 all: run
 
-clean:
-	rm -f out/Parcs.jar out/MatrixFrobeniusNormTask.jar
-
 out/Parcs.jar: out/parcs.jar src/Parcs.java
 	@javac -cp /out/parcs.jar src/Parcs.java
 	@jar cf out/Parcs.jar -C src Parcs.class -C src
