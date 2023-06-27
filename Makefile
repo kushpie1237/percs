@@ -7,7 +7,7 @@ out/Parcs.jar: out/parcs.jar src/Parcs.java
 
 out/MatrixFrobeniusNormTask.jar: out/parcs.jar src/MatrixFrobeniusNormTask.java
 	@javac -cp out/parcs.jar src/MatrixFrobeniusNormTask.java
-	@jar cf out/MatrixFrobeniusNormTask.jar -C src MatrixFrobeniusNormTask.class -C src
+	@jar cf out/MatrixFrobeniusNormTask.jar -C src MatrixFrobeniusNormTask.class
 	@rm -f src/MatrixFrobeniusNormTask.class
 
 build: out/Parcs.jar out/MatrixFrobeniusNormTask.jar
